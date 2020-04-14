@@ -1,0 +1,32 @@
+// General Classes
+
+.container-row-center {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+}
+
+.container-col-center {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.buttons {
+      min-width: max-content;
+      height: auto;
+      padding: 8px 16px;
+      margin: 10px;
+      border: 2px solid white;
+      text-align: center;
+      background-color: rgba($color: #000, $alpha: 0.3);
+}
+
+.not-displayed {
+      display: none;
+}

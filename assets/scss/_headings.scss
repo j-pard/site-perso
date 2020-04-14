@@ -1,0 +1,15 @@
+h1 {
+      font-size: 80px;
+      color: white;
+      margin-bottom: 20px;
+      cursor: default;
+
+      span {
+            margin: 0 2px;
+            color: white;
+            transition: all .4s;
+      }
+      span:hover {
+            color: red;
+      }
+}

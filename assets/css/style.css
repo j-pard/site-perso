@@ -11,6 +11,76 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+h1 {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+h1 span {
+  margin: 0 2px;
+  color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+h1 span:hover {
+  color: red;
+}
+
+.container-row-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.container-col-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  height: auto;
+  padding: 8px 16px;
+  margin: 10px;
+  border: 2px solid white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.not-displayed {
+  display: none;
+}
+
 body {
   background-image: url("../img/motherboard.jpeg");
   background-position: center;
@@ -20,11 +90,14 @@ body {
 
 body header {
   color: white;
+  height: 70px;
 }
 
 body header nav {
   width: 100%;
+  height: 100%;
   padding: 20px 50px;
+  font-size: 18px;
 }
 
 body header nav ul {
@@ -46,6 +119,10 @@ body header nav ul {
 body header nav ul li {
   margin-left: 100px;
   cursor: pointer;
+}
+
+body header nav ul li:first-child {
+  margin-left: 0;
 }
 
 body header nav ul li:before {
@@ -77,5 +154,38 @@ body header nav ul li:hover::after {
 
 body header nav ul li:hover::before {
   background-color: red;
+}
+
+body main #section-top {
+  height: calc(100vh - 70px);
+}
+
+body main #section-top div {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  width: 65%;
+}
+
+body main #section-top div ul {
+  margin-left: 30px;
+  padding: 10px 0 10px 30px;
+  list-style: none;
+  color: white;
+  border-left: 5px solid white;
+}
+
+body main #section-top div ul li {
+  font-size: 28px;
+}
+
+body main #section-top aside {
+  width: 35%;
+}
+
+body main #section-top aside img {
+  width: 300px;
+  height: auto;
+  border: 4px solid #444;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
