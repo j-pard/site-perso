@@ -9,6 +9,15 @@
       flex-wrap: nowrap;
 }
 
+.container-row-around {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: nowrap;
+}
+
 .container-col-center {
       width: 100%;
       display: flex;
@@ -17,16 +26,9 @@
       align-items: center;
 }
 
-.buttons {
-      min-width: max-content;
-      height: auto;
-      padding: 8px 16px;
-      margin: 10px;
-      border: 2px solid white;
-      text-align: center;
-      background-color: rgba($color: #000, $alpha: 0.3);
+.red {
+      color: red;
 }
-
 .not-displayed {
       display: none;
 }

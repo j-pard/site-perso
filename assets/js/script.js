@@ -1,5 +1,6 @@
 const h1 = document.querySelector("h1");
 const subH1 = document.getElementById("sub-h1");
+const btnSubH1 = document.getElementById("btn-sub-h1");
 
 
 const makeItHoverable = (element) => {
@@ -8,6 +9,9 @@ const makeItHoverable = (element) => {
       Content.forEach(letter => {
             let span = document.createElement("span");
             span.textContent = letter;
+            if(letter == ".") {
+                  span.classList.add("red");
+            }
             element.appendChild(span);
       });
 }
@@ -15,3 +19,4 @@ const makeItHoverable = (element) => {
 makeItHoverable(h1);
 
 subH1.style.width = h1.offsetWidth + "px";
+btnSubH1.style.width = h1.offsetWidth + "px";

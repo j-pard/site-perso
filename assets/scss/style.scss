@@ -6,38 +6,31 @@
 @import "_classes.scss";
 
 body {
-      background-image: url("../img/motherboard.jpeg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
 
       header {
+            background-color: $dark;
             color: white;
-            height: 70px;
 
             nav {
                   width: 100%;
                   height: 100%;
-                  padding: 20px 50px;
+                  padding: 15px 50px 10px 50px;
                   font-size: 18px;
 
                   ul {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        flex-wrap: nowrap;
                         list-style: none;
 
                         li {
-                              margin-left: 100px;
                               cursor: pointer;
                         }
 
-                        li:first-child {
-                              margin-left: 0;
+                        li.nav-header {
+                              font-size: 30px;
+                              font-weight: bold;
+                              margin-right: 300px;
                         }
 
-                        li:before {
+                        li.nav-links:before {
                               $circle-size: 10px;
                               content: "";
                               display: inline-block;
@@ -49,14 +42,14 @@ body {
                               transition: all .3s;
                         }
 
-                        li::after {
+                        li.nav-links::after {
                               content: "";
                               display: block;
                               width: 0%;
                               height: 2px;
                               background-color: white;
                               margin-top: 5px;
-                              transition: all .3s;
+                              transition: all .4s;
                         }
 
                         li:hover::after {
@@ -72,39 +65,65 @@ body {
 
       main {
             #section-top {
-                  height: calc(100vh - 70px); // 100vh - header.height
+                  height: calc(90vh - 70px); // 100vh - header.height
+
+                  aside {
+                        width: 35%;
+                        height: 100%;
+                        $border: 1px solid transparent;
+                        border-right: $border;
+                        border-bottom: $border;
+                        border-bottom-right-radius: 100px;
+
+                        background-image: url("../img/profil.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                  }
 
                   div {
-                        transform: translateY(-20%);
                         width: 65%;
                         ul {
                               margin-left: 30px;
                               padding: 10px 0 10px 30px;
                               list-style: none;
-                              color: white;
-                              border-left: 5px solid white;
+                              border-left: 4px solid $dark;
 
                               li {
-                                    font-size: 28px;
+                                    font-size: 26px;
                               }
                         }  
-                  }
 
-                  aside {
-                        width: 35%;
-                        
-                        img {
-                              width: 300px;
-                              height: auto;
-                              border: 4px solid #444;
-                              border-radius: 50%;
+                        button {
+                              font-size: 18px;
+                              font-weight: bold;
+                              background-color: transparent;
+                              color: red;
+                              border: 2px solid red;
+                              border-radius: 50px;
+                              margin-top: 100px;
+                              padding: 12px 24px;
+
+                              cursor: pointer;
+
+	                        animation: scale-up-center 0.6s ease-in-out infinite alternate-reverse both;
                         }
                   }
-
-                  
             }
 
             
             
       }
 }
+
+// ANIMATIONS
+
+@keyframes scale-up-center {
+      0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+                transform: scale(1.1);
+      }
+    }
