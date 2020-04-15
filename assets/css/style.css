@@ -31,8 +31,15 @@ h1 span:hover {
 }
 
 h2 {
-  margin: 50px auto;
-  color: #222;
+  width: calc(100% + 200px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  padding: 20px 100px;
+  margin-bottom: 60px;
+  background-color: #444;
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, #222222), color-stop(78%, #aaaaaa), to(white));
+  background: linear-gradient(90deg, #222222 29%, #aaaaaa 78%, white 100%);
+  color: white;
 }
 
 h3 {
@@ -131,7 +138,7 @@ body header {
 body header nav {
   width: 100%;
   height: 100%;
-  padding: 15px 50px 10px 50px;
+  padding: 10px 50px 10px 50px;
   font-size: 18px;
 }
 
@@ -141,6 +148,7 @@ body header nav ul {
 
 body header nav ul li {
   cursor: pointer;
+  padding: 5px 10px;
 }
 
 body header nav ul li.nav-header {
@@ -225,7 +233,7 @@ body main #section-top div button {
 }
 
 body main section:not(#section-top) {
-  margin-top: 100px;
+  margin-top: 30px;
   padding-left: 100px;
   padding-right: 100px;
 }
