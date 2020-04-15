@@ -6,7 +6,7 @@
 @import "_classes.scss";
 
 body {
-
+      
       header {
             background-color: $dark;
             color: white;
@@ -64,8 +64,9 @@ body {
       }
 
       main {
+
             #section-top {
-                  height: calc(90vh - 70px); // 100vh - header.height
+                  height: calc(80vh - 70px); // 100vh - header.height
 
                   aside {
                         width: 35%;
@@ -108,12 +109,78 @@ body {
 
 	                        animation: scale-up-center 0.6s ease-in-out infinite alternate-reverse both;
                         }
+
                   }
             }
 
-            
+            section:not(#section-top) {
+                  margin-top: 100px;
+                  padding-left: 100px;
+                  padding-right: 100px;
+            }
+
+            #section-who {
+
+                  article.personality {
+                        padding: 20px;
+                        margin-bottom: 50px;
+                        border: 1px solid $lightdark;
+                        border-top: 3px solid red;
+
+                        width: 400px;
+                        height: 300px;
+                  }
+            }
+
+            blockquote {
+                  background-color: #EEE;
+                  padding: 30px 50px;
+                  font-style: italic;
+                  width: 100vw;
+
+                  p {
+                        width: max-content;
+                        word-break: break-all;
+                        font-size: 22px;
+                        color: $dark;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 20px;
+                        text-align: center;
+                  }
+
+                  p::before, p::after {
+                        content: '"';
+                  }
+
+                  footer {
+                        background-color: transparent;
+                        height: max-content;
+                        color: #555;
+                        margin: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding: 0;
+                        font-size: 18px;
+                        text-align: right;
+                  }
+
+                  footer::before {
+                        content:"—";
+                  }
+
+            }
             
       }
+
+      footer {
+            background-color: $dark;
+            color: white;
+            padding: 20px 50px;
+            margin-top: 50px;
+            text-align: center;
+      }
+
 }
 
 // ANIMATIONS

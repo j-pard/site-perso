@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -13,20 +14,33 @@ body {
 }
 h1 {
   font-size: 70px;
-  color: black;
+  color: #222;
   margin-bottom: 20px;
   cursor: default;
 }
 
 h1 span {
   margin: 0 2px;
-  color: black;
+  color: #222;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
 h1 span:hover {
   color: red;
+}
+
+h2 {
+  margin: 50px auto;
+  color: #222;
+}
+
+h3 {
+  color: #222;
+  text-align: center;
+  color: #222;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #888;
 }
 
 .container-row-center {
@@ -64,6 +78,24 @@ h1 span:hover {
           align-items: baseline;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.container-row-around-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container-col-center {
@@ -149,7 +181,7 @@ body header nav ul li:hover::before {
 }
 
 body main #section-top {
-  height: calc(90vh - 70px);
+  height: calc(80vh - 70px);
 }
 
 body main #section-top aside {
@@ -190,6 +222,71 @@ body main #section-top div button {
   padding: 12px 24px;
   cursor: pointer;
   animation: scale-up-center 0.6s ease-in-out infinite alternate-reverse both;
+}
+
+body main section:not(#section-top) {
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+body main #section-who article.personality {
+  padding: 20px;
+  margin-bottom: 50px;
+  border: 1px solid #888;
+  border-top: 3px solid red;
+  width: 400px;
+  height: 300px;
+}
+
+body main blockquote {
+  background-color: #EEE;
+  padding: 30px 50px;
+  font-style: italic;
+  width: 100vw;
+}
+
+body main blockquote p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  word-break: break-all;
+  font-size: 22px;
+  color: #222;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body main blockquote p::before, body main blockquote p::after {
+  content: '"';
+}
+
+body main blockquote footer {
+  background-color: transparent;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #555;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-size: 18px;
+  text-align: right;
+}
+
+body main blockquote footer::before {
+  content: "—";
+}
+
+body footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 50px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 @-webkit-keyframes scale-up-center {

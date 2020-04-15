@@ -1,15 +1,28 @@
 h1 {
       font-size: 70px;
-      color: black;
+      color: $dark;
       margin-bottom: 20px;
       cursor: default;
 
       span {
             margin: 0 2px;
-            color: black;
+            color: $dark;
             transition: all .4s;
       }
       span:hover {
             color: red;
       }
+}
+
+h2 {
+      margin: 50px auto;
+      color: $dark;
+}
+
+h3 {
+      color: $dark;
+      text-align: center;
+      color: $dark;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $lightdark;
 }
