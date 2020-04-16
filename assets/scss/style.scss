@@ -72,7 +72,7 @@ body {
       main {
 
             #section-top {
-                  height: calc(80vh - 70px); // 100vh - header.height
+                  height: calc(85vh - 70px); // 100vh - header.height
 
                   aside {
                         width: 35%;
@@ -178,9 +178,23 @@ body {
             }
 
             #section-skills {
+                  padding-bottom: 30px;
+                  #tech-list {
+                        order: 1;
+                  }
+
+                  #dev-list {
+                        order: 2;
+                  }
+
+                  #soft-list {
+                        order: 3;
+                  }
+
                   ul {
                         list-style: none;
                         width: auto;
+                        padding: 20px 30px;
 
                         li:not(.skills-heading) {
                               display: flex;

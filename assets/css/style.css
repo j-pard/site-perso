@@ -218,7 +218,7 @@ body header nav ul li:hover::before, body header nav ul li:focus::before {
 }
 
 body main #section-top {
-  height: calc(80vh - 70px);
+  height: calc(85vh - 70px);
 }
 
 body main #section-top aside {
@@ -318,9 +318,32 @@ body main blockquote footer::before {
   content: "—";
 }
 
+body main #section-skills {
+  padding-bottom: 30px;
+}
+
+body main #section-skills #tech-list {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+body main #section-skills #dev-list {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+body main #section-skills #soft-list {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
 body main #section-skills ul {
   list-style: none;
   width: auto;
+  padding: 20px 30px;
 }
 
 body main #section-skills ul li:not(.skills-heading) {
