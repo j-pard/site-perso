@@ -200,7 +200,8 @@ body {
                               display: flex;
                               align-items: center;
                               width: auto;
-                              margin: 10px auto;
+                              margin: 0 auto;
+                              padding: 10px;
                               height: max-content;
 
                               font-size: 20px;
@@ -212,6 +213,14 @@ body {
                                     height: auto;
                                     max-height: 60px;
                                     margin-right: 20px;
+
+                                    transition: all 1s;
+                              }
+                        }
+
+                        li:not(.skills-heading):hover {
+                              img {
+                                    transform: rotate(270deg);
                               }
                         }
                   }
@@ -239,4 +248,4 @@ body {
       100% {
                 transform: scale(1.1);
       }
-    }
+}
