@@ -55,6 +55,12 @@ h4 {
   margin-bottom: 30px;
 }
 
+h5 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
 .container-row-center {
   width: 100%;
   display: -webkit-box;
@@ -144,6 +150,22 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.articles {
+  width: 250px;
+  height: 220px;
+  margin: 0 20px;
+  border: 1px solid #888;
+  border-top: 3px solid red;
+  cursor: default;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.articles:hover {
+  -webkit-box-shadow: 5px 5px 10px 5px #888;
+          box-shadow: 5px 5px 10px 5px #888;
 }
 
 .red {
@@ -376,6 +398,27 @@ body main #section-skills ul li:not(.skills-heading) img {
 body main #section-skills ul li:not(.skills-heading):hover img {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+}
+
+body main #section-portfolio ul, body main #section-blog ul {
+  list-style: none;
+}
+
+body main #section-portfolio ul .show-more, body main #section-blog ul .show-more {
+  margin: auto 0;
+}
+
+body main #section-portfolio ul .show-more a i, body main #section-blog ul .show-more a i {
+  color: #888;
+  font-size: 60px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+body main #section-portfolio ul .show-more a i:hover, body main #section-blog ul .show-more a i:hover {
+  color: red;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 body footer {

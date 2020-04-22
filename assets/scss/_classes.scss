@@ -44,6 +44,20 @@
       align-items: center;
 }
 
+.articles {
+      width: 250px;
+      height: 220px;
+      margin: 0 20px;
+      border: 1px solid $lightdark;
+      border-top: 3px solid red;
+      cursor: default;
+      transition: all .3s;
+}
+
+.articles:hover {
+      box-shadow: 5px 5px 10px 5px $lightdark;
+}
+
 .red {
       color: red;
 }

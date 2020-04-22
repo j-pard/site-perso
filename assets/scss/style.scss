@@ -226,6 +226,28 @@ body {
                   }
             }
             
+            #section-portfolio, #section-blog {
+                  ul {
+                        list-style: none;
+
+                        .show-more {
+                              margin: auto 0;
+                              a {
+                                    i {
+                                          color: $lightdark;
+                                          font-size: 60px;
+                                          transition: all .6s;
+                                    }
+
+                                    i:hover {
+                                          color: red;
+                                          transform: rotate(360deg);
+                                    }
+                              }
+                        }
+                  }
+
+            }
       }
 
       footer {
