@@ -47,7 +47,7 @@
 .articles {
       width: 250px;
       height: 220px;
-      margin: 0 20px;
+      margin: 20px 20px;
       border: 1px solid $lightdark;
       border-top: 3px solid red;
       cursor: default;
@@ -64,4 +64,36 @@
 
 .not-displayed {
       display: none;
+}
+
+.socials {
+      margin: 0 10px; 
+      a {
+            i {
+                  padding: 5px;  
+                  font-size: 30px;
+                  color: $lightdark;
+                  transition: all .5s;
+            }
+
+            i:hover {
+                  transform: scale(1.2);
+            }
+
+            .twitter:hover {
+                  color: $twitter;
+            }
+            
+            .facebook:hover {
+                 color: $facebook;
+            }
+            
+            .linkedin:hover {
+                  color: $linkedin;
+            }
+            
+            .github:hover {
+                  color: $github;
+            }
+      }
 }

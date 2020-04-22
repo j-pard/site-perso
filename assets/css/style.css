@@ -5,12 +5,17 @@
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
   min-height: 100vh;
   width: 100%;
+}
+
+body ul {
+  list-style: none;
 }
 h1 {
   font-size: 70px;
@@ -35,7 +40,7 @@ h2 {
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
   padding: 20px 100px;
-  margin-bottom: 60px;
+  margin: 30px 0;
   background-color: #444;
   background: -webkit-gradient(linear, left top, right top, color-stop(29%, #222222), color-stop(78%, #aaaaaa), to(white));
   background: linear-gradient(90deg, #222222 29%, #aaaaaa 78%, white 100%);
@@ -155,7 +160,7 @@ h5 {
 .articles {
   width: 250px;
   height: 220px;
-  margin: 0 20px;
+  margin: 20px 20px;
   border: 1px solid #888;
   border-top: 3px solid red;
   cursor: default;
@@ -176,28 +181,61 @@ h5 {
   display: none;
 }
 
+.socials {
+  margin: 0 10px;
+}
+
+.socials a i {
+  padding: 5px;
+  font-size: 30px;
+  color: #888;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.socials a i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.socials a .twitter:hover {
+  color: #00acee;
+}
+
+.socials a .facebook:hover {
+  color: #3b5998;
+}
+
+.socials a .linkedin:hover {
+  color: #0e76a8;
+}
+
+.socials a .github:hover {
+  color: #333;
+}
+
 body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #222;
   color: white;
 }
 
 body header nav {
-  width: 100%;
   height: 100%;
   padding: 10px 50px 10px 50px;
   font-size: 18px;
 }
 
-body header nav ul {
-  list-style: none;
-}
-
 body header nav ul li {
   cursor: pointer;
-  padding: 5px 10px;
 }
 
 body header nav ul li a, body header nav ul li a:visited, body header nav ul li a:active {
+  padding: 5px 10px 5px 0;
   color: white;
   text-decoration: none;
 }
@@ -262,7 +300,6 @@ body main #section-top div {
 body main #section-top div ul {
   margin-left: 30px;
   padding: 10px 0 10px 30px;
-  list-style: none;
   border-left: 4px solid #222;
 }
 
@@ -284,7 +321,6 @@ body main #section-top div button {
 }
 
 body main section:not(#section-top) {
-  margin-top: 30px;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -363,7 +399,6 @@ body main #section-skills #soft-list {
 }
 
 body main #section-skills ul {
-  list-style: none;
   width: auto;
   padding: 20px 30px;
 }
@@ -398,10 +433,6 @@ body main #section-skills ul li:not(.skills-heading) img {
 body main #section-skills ul li:not(.skills-heading):hover img {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-}
-
-body main #section-portfolio ul, body main #section-blog ul {
-  list-style: none;
 }
 
 body main #section-portfolio ul .show-more, body main #section-blog ul .show-more {

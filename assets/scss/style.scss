@@ -5,26 +5,28 @@
 @import "_headings.scss";
 @import "_classes.scss";
 
-body {
-      
+body {      
       header {
+            position: fixed;
+                  top: 0;
+                  left: 0;
+            width: 100%;
+            z-index: 99;
             background-color: $dark;
             color: white;
 
             nav {
-                  width: 100%;
                   height: 100%;
                   padding: 10px 50px 10px 50px;
                   font-size: 18px;
 
                   ul {
-                        list-style: none;
-
+                        
                         li {
                               cursor: pointer;
-                              padding: 5px 10px;
 
                               a, a:visited, a:active {
+                                    padding: 5px 10px 5px 0;
                                     color: white;
                                     text-decoration: none;
                               }
@@ -70,7 +72,6 @@ body {
       }
 
       main {
-
             #section-top {
                   height: calc(85vh - 70px); // 100vh - header.height
 
@@ -93,7 +94,6 @@ body {
                         ul {
                               margin-left: 30px;
                               padding: 10px 0 10px 30px;
-                              list-style: none;
                               border-left: 4px solid $dark;
 
                               li {
@@ -120,7 +120,6 @@ body {
             }
 
             section:not(#section-top) {
-                  margin-top: 30px;
                   padding-left: 100px;
                   padding-right: 100px;
             }
@@ -192,7 +191,6 @@ body {
                   }
 
                   ul {
-                        list-style: none;
                         width: auto;
                         padding: 20px 30px;
 
@@ -228,8 +226,6 @@ body {
             
             #section-portfolio, #section-blog {
                   ul {
-                        list-style: none;
-
                         .show-more {
                               margin: auto 0;
                               a {
@@ -248,6 +244,8 @@ body {
                   }
 
             }
+
+            
       }
 
       footer {
